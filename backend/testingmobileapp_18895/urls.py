@@ -33,6 +33,14 @@ urlpatterns = [
     path("api/v1/", include("event.api.v1.urls")),
     path("event/", include("event.urls")),
     path("home/", include("home.urls")),
+    path("api/v1/", include("delivery_order.api.v1.urls")),
+    path("delivery_order/", include("delivery_order.urls")),
+    path("api/v1/", include("driver.api.v1.urls")),
+    path("driver/", include("driver.urls")),
+    path("api/v1/", include("menu.api.v1.urls")),
+    path("menu/", include("menu.urls")),
+    path("api/v1/", include("delivery_user_profile.api.v1.urls")),
+    path("delivery_user_profile/", include("delivery_user_profile.urls")),
 ]
 
 admin.site.site_header = "TestingMobileApp"
